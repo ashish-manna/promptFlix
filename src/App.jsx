@@ -1,8 +1,19 @@
-import React from 'react'
+import NotFound from './pages/NotFound'
+import Home from './pages/Home'
+import { Route, Routes } from 'react-router-dom'
+import Login from './components/Login'
 
 const App = () => {
   return (
-    <div className='text-4xl text-amber-200'>App</div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+
+
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   )
 }
 
