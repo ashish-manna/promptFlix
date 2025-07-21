@@ -59,7 +59,9 @@ const Login = () => {
     <div className="">
       <Header />
       <div className="w-full  relative">
-        <img className="w-full  h-auto" src="src/assets/login-page-bg-banner.jpg" alt="bg-banner" />
+        {/* background image  */}
+        <img className="w-full  h-auto" src="/login-page-bg-banner.jpg" alt="bg-banner" />
+        {/* main form  */}
         <form
           onSubmit={(e) => {
             e.preventDefault()
