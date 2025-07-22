@@ -4,6 +4,7 @@ import MainTrailerSection from "../components/MainTrailerSection";
 import { TMDB_API_OPTIONS } from "../utils/constant";
 import { useDispatch } from "react-redux";
 import { addNowPlayingMovies } from "../redux/slice/moviesSlice";
+import SecondarySection from "../components/SecondarySection";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -20,6 +21,7 @@ const Home = () => {
   return <div className="w-screen overflow-x-hidden" >
     <Header />
     <MainTrailerSection />
+    <SecondarySection />
   </div>;
 };
 
