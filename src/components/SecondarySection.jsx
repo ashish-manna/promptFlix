@@ -5,7 +5,6 @@ import MoviesList from "./MoviesList"
 const SecondarySection = () => {
     const nowPlayingMoviesData = useSelector((store) => store.movies?.nowPlayingMovies);
 
-
     // popular movies fetching
 
     return (
