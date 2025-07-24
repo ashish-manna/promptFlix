@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Header from "../components/Header";
 import MainTrailerSection from "../components/MainTrailerSection";
 import { TMDB_API_OPTIONS } from "../utils/constant";
@@ -20,7 +20,7 @@ const Home = () => {
   useEffect(() => {
     getNowPlayingMovies();
   }, [])
-  return <div className="w-screen overflow-x-hidden" >
+  return <div className="w-screen overflow-x-hidden bg-black" >
     <Header />
     {isAipage ? <AiSearch /> :
       <>

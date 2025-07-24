@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import { useRef } from "react"
 import { cohere, TMDB_API_OPTIONS } from "../utils/constant";
 import { extractMovieNames } from "../utils/extractNames";
 import { useDispatch } from "react-redux";
@@ -36,7 +36,7 @@ const AiSearch = () => {
 
     return (
         <div className="w-full h-screen bg-[url('/login-page-bg-banner.jpg')] bg-center bg-fixed">
-            <div className="flex pt-[20%] w-[50%] mx-auto">
+            <div className="px-4 md:px-0 flex pt-[40%] md:pt-[10%] w-full md:w-[50%] mx-auto">
                 <input name="searchText" ref={searchText} className="bg-white p-4 w-full" placeholder="Get AI Recomendation" type="text" />
                 <button className="bg-black text-white p-4 font-bold cursor-pointer" onClick={getApiRecomendations}>Search</button>
             </div>

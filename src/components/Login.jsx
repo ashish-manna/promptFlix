@@ -60,13 +60,13 @@ const Login = () => {
       <Header />
       <div className="w-full  relative">
         {/* background image  */}
-        <img className="w-full  h-auto" src="/login-page-bg-banner.jpg" alt="bg-banner" />
+        <img className="w-full  h-screen object-cover" src="/login-page-bg-banner.jpg" alt="bg-banner" />
         {/* main form  */}
         <form
           onSubmit={(e) => {
             e.preventDefault()
           }}
-          className="w-4/12 flex flex-col gap-4 rounded-2xl bg-black opacity-90 px-4 py-6 absolute top-[20%] mx-auto left-0 right-0 z-88">
+          className="w-[95%] px-4 md:w-4/12 flex flex-col gap-4 rounded-2xl bg-black opacity-90 py-6 absolute top-[20%] mx-auto left-0 right-0 z-88">
           <div className="text-4xl font-bold text-white mb-4"> {isSignIn ? "Sign In" : "Sign Up"}</div>
           {!isSignIn && <input className="w-full bg-gray-700 px-2 py-4 rounded-lg" ref={name} placeholder="Full Name" name="name" type="text" />}
           <input className="w-full bg-gray-700 px-2 py-4 rounded-lg" ref={email} placeholder="Email" name="email" type="email" />
