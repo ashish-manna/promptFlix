@@ -20,7 +20,7 @@ const VideoBackground = ({ movieId }) => {
         getMovieVideo();
     }, [])
     return (
-        <div className="relative w-screen aspect-video overflow-hidden">
+        <div className="relative mt-15 md:mt-0 w-screen aspect-video overflow-hidden">
             <iframe
                 className="absolute top-0 left-0 w-full h-full scale-[1.5]"
                 src={`https://www.youtube.com/embed/${trailerVideo?.key}?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1`}
